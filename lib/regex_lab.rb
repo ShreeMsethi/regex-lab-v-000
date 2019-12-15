@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(assert)
  if assert.scan(/\A+[aeiou]/)
     return true
-  else
+  elsif assert.scan(/\A+[aeiou]/) != true
     return false
   end
 end
